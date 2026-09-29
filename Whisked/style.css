@@ -1,0 +1,276 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("fonts/GothamLight.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    font-family: "gotham";
+    font-weight: 300;
+    background-color: #f6ffef;
+}
+
+header {
+    display: flex;
+    align-items: center;
+
+    height: 98px;
+    padding: 0 42px;
+
+    background-color: #bebe84;
+}
+
+.logo { 
+    margin-right: auto;
+}
+
+.desktop-logo{
+    display:block;
+    width: 140px;
+    height: auto;
+}
+
+.mobile-logo {
+    display:none
+}
+
+nav { 
+    display:flex;
+    gap: 72px;
+}
+
+nav a {
+    color:black;
+    text-decoration: none;
+    font-size: 32px;
+    
+
+}
+
+.menu-icon {
+    display: none;
+}
+
+.hero {
+    display:flex;
+    width: 100%;
+    aspect-ratio: 1440 / 624;
+    height: auto;
+    background-color: #d6d694;
+}
+
+.hero-image {
+    width: 48.3%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+.hero-content {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0;
+    
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin: 8px 0 25px;
+}
+
+.buy-button {
+    background-color: #f6ffef;
+    color: black;
+    text-decoration: none;
+    padding: 4px 24px 4px 24px;
+    border-radius: 20px;
+    font-size: 32px;
+
+}
+
+.hero-wave { 
+    width: 100%;
+    margin-top: -9.7vw;
+    position: relative;
+    z-index: 2;
+    line-height: 0;
+}
+
+.hero-wave img { 
+    display:block;
+    width:100%;
+    height: auto;
+}
+
+.content-title h2{ 
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
+    padding: 0 42px;
+}
+
+.items {
+    display: flex;
+    gap: 53px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.item-disc {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.item-disc p,
+.item-disc h3,
+.item-disc h4 { 
+    margin: 8px 0;
+}
+
+footer{
+    width: 100%;
+}
+
+.footer-wave{
+    width: 100%;
+    line-height: 0;
+    background-color: #bebe84;
+}
+
+.footer-wave img {
+    display:block ;
+    width: 100%;
+    height: auto;
+}
+
+.footer-content{
+    background-color: #bebe84;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 20px 42px 80px;
+}
+.social-icons img {
+    width: 100%;
+    height:100%;
+}
+
+@media (max-width: 768px) {
+    
+    header {
+        height:80px;
+        padding: 0 24px;
+    }
+
+    .desktop-logo {
+        display:none;
+    }
+
+    .mobile-logo{
+        display:block;
+        width: 40px;
+        height: auto;
+    }
+
+    nav{
+         display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        width: 30px;
+        height: auto;
+    }
+
+    .hero {
+        width: 100%;
+        height: 350px;
+        aspect-ratio: auto;
+        background-color: #d6d694;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-content {
+        width: 100%;
+        height: 100%;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .buy-button{
+        font-size: 16px;
+        padding: 4px 16px;
+    }
+
+    .hero-wave{
+        margin-top: -50px;
+    }
+
+    .content-title h2 {
+        font-size: 28px;
+        padding: 0 24px;
+    }
+
+    .items {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .item {
+        width: 80%;
+        text-align: center;
+    }
+
+    .item > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        padding: 30px 24px 60px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    
+}
