@@ -1,1 +1,1 @@
-document.querySelector(".herocontent h1").innerHTML = "I modified this with a query selector."
+document.querySelector(".hero-image img").src = "Images/cat with a tie.jpg";
