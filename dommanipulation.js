@@ -7,3 +7,7 @@ document.getElementsByClassName("hero-content")[0].innerHTML =
 let newEL = document.getElementsByClassName("content-title")[0];
 
 newEL.style.backgroundColor = "#d6d694";
+
+let removeEl = document.getElementsByClassName("items")[1];
+    
+    removeEl.classList.remove("items");
