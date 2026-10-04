@@ -4,6 +4,6 @@ document.getElementsByClassName("hero-image")[0]
 document.getElementsByClassName("hero-content")[0].innerHTML = 
     "<-- connect with him on linkedin";
 
-let newEL = document.getElementsByClassName("hero-content")[0];
+let newEL = document.getElementsByClassName("content-title")[0];
 
-newEL.style.fontsize = "40px";
+newEL.style.backgroundColor = "#d6d694";
