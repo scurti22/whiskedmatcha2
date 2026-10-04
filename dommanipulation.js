@@ -1,0 +1,1 @@
+document.querySelector(".herocontent h1").innerHTML = "I modified this with a query selector."
