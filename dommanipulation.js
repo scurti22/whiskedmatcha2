@@ -1,6 +1,6 @@
-document.querySelector(".hero-image img").src = "Images/cat with a tie.jpg";
+document.getElementsByClassName("hero-image").src = "Images/cat with a tie.jpg";
 
-document.querySelector(".hero-content h1").innerHTML = 
+document.getElementsByClassName("hero-content").innerHTML = 
     "<-- this is a cat";
 
 document.querySelector(".hero-content p").innerHTML =
